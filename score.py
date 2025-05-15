@@ -7,12 +7,19 @@ Original file is located at
     https://colab.research.google.com/drive/1RjuilQInFpkbBtjmCjhHL3fca2tsGG1G
 """
 
-data = list(map(int, input().split()))
+score = list(map(int, input().split()))
 count, total = 0, 0
 
-for i in data:
+for i in score:
   total += i
   count += 1
 
 average = total / count
 print(average)
+
+countF=0
+for i in score:
+  if int(i)<60:
+    countF +=1
+print(countF)
+
