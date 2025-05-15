@@ -7,4 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1AIES6muq9O8wECR9qnLmqiSp02OgTvWf
 """
 
-grade=input()
+score=input().split()
+countF=0
+for i in score:
+  if int(i)<60:
+    countF +=1
